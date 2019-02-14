@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HookBlock'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = '照搬 https://github.com/ebf/CTObjectiveCRuntimeAdditions ，方便使用，弄了个pods '
 
 # This description is used to generate tags and improve search results.

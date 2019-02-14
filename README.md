@@ -11,6 +11,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+## Instructions
+> 照搬 https://github.com/ebf/CTObjectiveCRuntimeAdditions ，方便使用，弄了个pods.
+
 ## Installation
 
 HookBlock is available through [CocoaPods](https://cocoapods.org). To install
@@ -25,7 +28,7 @@ pod 'HookBlock'
 
 
 // a test block.
-BOOL(^testBlock)(BOOL animated, id object,NSURLRequest *str) = ^BOOL(BOOL animated, id object,NSURLRequest *str) {
+BOOL(^testBlock)(BOOL animated, id object,NSURLRequest *str,int i) = ^BOOL(BOOL animated, id object,NSURLRequest *req,int i) {
 	return YES;
 };
 
@@ -39,10 +42,11 @@ for (int i = 0; i < methodSignature.numberOfArguments; i ++) {
 	NSLog(@"第%d个参数是:%s",i,argu);
 }
     
-2019-02-14 14:55:28.297737+0800 HookBlock_Example[39474:1003540] 第0个参数是:@?
-2019-02-14 14:55:28.297963+0800 HookBlock_Example[39474:1003540] 第1个参数是:B
-2019-02-14 14:55:28.298077+0800 HookBlock_Example[39474:1003540] 第2个参数是:@
-2019-02-14 14:55:28.298180+0800 HookBlock_Example[39474:1003540] 第3个参数是:@"NSURLRequest"
+2019-02-14 15:19:56.654417+0800 HookBlock_Example[42387:1059962] 第0个参数是:@?
+2019-02-14 15:19:56.654667+0800 HookBlock_Example[42387:1059962] 第1个参数是:B
+2019-02-14 15:19:56.654805+0800 HookBlock_Example[42387:1059962] 第2个参数是:@
+2019-02-14 15:19:56.654930+0800 HookBlock_Example[42387:1059962] 第3个参数是:@"NSURLRequest"
+2019-02-14 15:19:56.655052+0800 HookBlock_Example[42387:1059962] 第4个参数是:i
 ```
 ## Author
 

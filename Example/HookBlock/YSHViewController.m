@@ -20,10 +20,10 @@
     [super viewDidLoad];
 
     // a test block.
-    BOOL(^testBlock)(BOOL animated, id object,NSURLRequest *str) = ^BOOL(BOOL animated, id object,NSURLRequest *str) {
+    BOOL(^testBlock)(BOOL animated, id object,NSURLRequest *str,int i) = ^BOOL(BOOL animated, id object,NSURLRequest *req,int i) {
         return YES;
     };
-
+    
     // allocating a block description
     CTBlockDescription *blockDescription = [[CTBlockDescription alloc] initWithBlock:testBlock];
 
