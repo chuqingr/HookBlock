@@ -1,0 +1,16 @@
+PODS:
+  - HookBlock (0.1.0)
+
+DEPENDENCIES:
+  - HookBlock (from `../`)
+
+EXTERNAL SOURCES:
+  HookBlock:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HookBlock: 009550b61fbf628f05c36c41940abd22fb371b15
+
+PODFILE CHECKSUM: be21e0d4a9b62dc1655410ebe7d66e7c9bf05491
+
+COCOAPODS: 1.6.0

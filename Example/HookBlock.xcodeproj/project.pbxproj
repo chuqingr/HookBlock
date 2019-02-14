@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B039BA1A23D45E3587FA83B /* HookBlock.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HookBlock.podspec; path = ../HookBlock.podspec; sourceTree = "<group>"; };
+		2B039BA1A23D45E3587FA83B /* HookBlock.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HookBlock.podspec; path = ../HookBlock.podspec; sourceTree = "<group>"; };
 		5044B62C8C16FC2601FCB39A /* Pods-HookBlock_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HookBlock_Example.release.xcconfig"; path = "Target Support Files/Pods-HookBlock_Example/Pods-HookBlock_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5B2F1E8D5902939CB3838F4E /* Pods_HookBlock_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HookBlock_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* HookBlock_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HookBlock_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +63,8 @@
 		6DFF6B5BA44A29C82EBC0D27 /* Pods-HookBlock_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HookBlock_Tests.release.xcconfig"; path = "Target Support Files/Pods-HookBlock_Tests/Pods-HookBlock_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		94FD34200D533BFB45CC6A03 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		A815C78CBA7ED2C08797D8BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		94FD34200D533BFB45CC6A03 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A815C78CBA7ED2C08797D8BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B0D4E1224F9267E85A4E6457 /* Pods-HookBlock_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HookBlock_Example.debug.xcconfig"; path = "Target Support Files/Pods-HookBlock_Example/Pods-HookBlock_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B8A036BA7AFD54FAFA5BD40C /* Pods_HookBlock_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HookBlock_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				6986C6D9588CBB7433FAE586 /* Pods-HookBlock_Tests.debug.xcconfig */,
 				6DFF6B5BA44A29C82EBC0D27 /* Pods-HookBlock_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = chuqingr;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 593RF3MKUX;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -498,6 +500,7 @@
 			baseConfigurationReference = B0D4E1224F9267E85A4E6457 /* Pods-HookBlock_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 593RF3MKUX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HookBlock/HookBlock-Prefix.pch";
 				INFOPLIST_FILE = "HookBlock/HookBlock-Info.plist";
@@ -513,6 +516,7 @@
 			baseConfigurationReference = 5044B62C8C16FC2601FCB39A /* Pods-HookBlock_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 593RF3MKUX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HookBlock/HookBlock-Prefix.pch";
 				INFOPLIST_FILE = "HookBlock/HookBlock-Info.plist";

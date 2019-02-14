@@ -7,6 +7,7 @@
 //
 
 #import "YSHViewController.h"
+#import <CTBlockDescription.h>
 
 @interface YSHViewController ()
 
@@ -17,7 +18,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    // a test block.
+    BOOL(^testBlock)(BOOL animated, id object,NSURLRequest *str) = ^BOOL(BOOL animated, id object,NSURLRequest *str) {
+        return YES;
+    };
+
+    // allocating a block description
+    CTBlockDescription *blockDescription = [[CTBlockDescription alloc] initWithBlock:testBlock];
+
+    NSMethodSignature *methodSignature = blockDescription.blockSignature;
+
+    for (int i = 0; i < methodSignature.numberOfArguments; i ++) {
+        const char *argu = [methodSignature getArgumentTypeAtIndex:i];
+        NSLog(@"第%d个参数是:%s",i,argu);
+    }
 }
 
 - (void)didReceiveMemoryWarning
