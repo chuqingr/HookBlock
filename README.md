@@ -50,7 +50,7 @@ for (int i = 0; i < methodSignature.numberOfArguments; i ++) {
 ```
 ## Author
 
-chuqingr, chuqingr@icloud.com
+杨胜浩, chuqingr@icloud.com
 
 ## License
 
